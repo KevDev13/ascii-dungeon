@@ -1,6 +1,6 @@
 CXX=g++
 CXXFLAGS=-Wall -g -std=c++17
-INC_DIRS=blt
+INC_DIRS=ThirdParty
 INC_PARAM=$(foreach i, $(INC_DIRS), -I$i)
 LDLIBS=-lBearLibTerminal
 
