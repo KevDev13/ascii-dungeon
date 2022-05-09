@@ -17,7 +17,6 @@ OBJ_FILES=$(SOURCE_FILES:%.cpp=$(OBJ_DIR)/%.o)
 
 .PHONY: build clean run all
 
-
 all: build
 
 build: $(EXEC_FILES)
