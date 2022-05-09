@@ -27,7 +27,7 @@ $(EXEC_FILES): $(OBJ_FILES)
 	@$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 	@echo "Build complete!"
 
-$(OBJ_FILES): $(OBJ_DIR)/%.o: $(SOURCE_FILES)
+$(OBJ_FILES): $(OBJ_DIR)/%.o: %.cpp
 	@echo Compiling $<
 	@mkdir -p $(@D)
 	@$(CXX) $(CXXFLAGS) $(INCLUDES) -o $@ $<
