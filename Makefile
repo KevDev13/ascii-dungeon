@@ -15,7 +15,10 @@ SOURCE_FILES=main.cpp \
 EXEC_FILES=$(EXEC_NAME:%=$(BIN_DIR)/%)
 OBJ_FILES=$(SOURCE_FILES:%.cpp=$(OBJ_DIR)/%.o)
 
-.PHONY: build clean run
+.PHONY: build clean run all
+
+
+all: build
 
 build: $(EXEC_FILES)
 
@@ -31,4 +34,7 @@ $(OBJ_FILES): $(OBJ_DIR)/%.o: $(SOURCE_FILES)
 	@mkdir -p $(@D)
 	@$(CC) $(CXXFLAGS) $(INCLUDES) -o $@ $<
 	@echo "Compilation complete!"
+
+run:
+	@./$(BIN_DIR)/$(EXEC_NAME)
 
