@@ -1,4 +1,4 @@
-#include "ThirdParty/BearLibTerminal.h"
+#include "BearLibTerminal.h"
 
 int main() {
   terminal_open();
