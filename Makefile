@@ -4,7 +4,7 @@ CXXFLAGS=-c -Wall -g -std=c++17
 LDLIBS=-lBearLibTerminal
 LDFLAGS=#none
 
-INC_DIRS=ThirdParty
+INC_DIRS=ThirdParty include
 INCLUDES=$(foreach i, $(INC_DIRS), -I$i)
 BIN_DIR=bin
 OBJ_DIR=$(BIN_DIR)/obj
