@@ -31,7 +31,6 @@ $(OBJ_FILES): $(OBJ_DIR)/%.o: %.cpp
 	@echo Compiling $<
 	@mkdir -p $(@D)
 	@$(CXX) $(CXXFLAGS) $(INCLUDES) -o $@ $<
-	@echo "Compilation complete!"
 
 run:
 	@./$(BIN_DIR)/$(EXEC_NAME)
