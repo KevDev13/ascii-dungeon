@@ -1,4 +1,5 @@
 #include "BearLibTerminal.h"
+#include "entt.hpp"
 #include "vector.h"
 
 int main() {
