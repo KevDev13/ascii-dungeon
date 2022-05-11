@@ -1,6 +1,8 @@
 #include "BearLibTerminal.h"
 #include "entt.hpp"
+
 #include "vector.h"
+#include "layers.h"
 
 int main() {
   terminal_open();
