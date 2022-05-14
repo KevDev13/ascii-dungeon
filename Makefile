@@ -33,5 +33,6 @@ $(OBJ_FILES): $(OBJ_DIR)/%.o: %.cpp
 	@$(CXX) $(CXXFLAGS) $(INCLUDES) -o $@ $<
 
 run:
+	make build
 	@./$(BIN_DIR)/$(EXEC_NAME)
 
