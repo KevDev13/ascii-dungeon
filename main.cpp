@@ -17,7 +17,7 @@ int main() {
   while(!quit) {
     terminal_clear();
     terminal_color(color_from_name("green"));
-    terminal_put(x, y, '@');
+    terminal_put(x, y, 1);
     terminal_refresh();
     int k = terminal_read();
     quit = k == TK_CLOSE;
