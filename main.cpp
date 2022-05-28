@@ -23,13 +23,21 @@ int main() {
     quit = k == TK_CLOSE;
 
     if(k == TK_W) {
-      --y;
+      if(y > 0) {
+        --y;
+      }
     } else if(k == TK_S) {
-      ++y;
+      if(y < 49) {
+        ++y;
+      }
     } else if(k == TK_A) {
-      --x;
+      if(x > 0) {
+        --x;
+      }
     } else if(k == TK_D) {
-      ++x;
+      if(x < 79) {
+        ++x;
+      }
     }
   }
 
