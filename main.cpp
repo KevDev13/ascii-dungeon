@@ -4,10 +4,11 @@
 #include "vector.h"
 #include "layers.h"
 
+
 int main() {
   terminal_open();
 
-  terminal_bkcolor(color_from_name("grey"));
+  terminal_bkcolor(color_from_name("black"));
 
   int x = 5;
   int y = 5;
