@@ -1,14 +1,24 @@
+
+#include <cstring>
+
 #include "BearLibTerminal.h"
 #include "entt.hpp"
 
 #include "vector.h"
 #include "layers.h"
 
-
 int main() {
   terminal_open();
 
   terminal_bkcolor(color_from_name("black"));
+
+  const char* winsize = terminal_get("window.size");
+  char str_winwidth[3];
+  memcpy(str_winwidth, &winsize[0], 2);
+  str_winwidth[2] = '\0';
+  char str_winheight[3];
+  memcpy(str_winheight, &winsize[3], 2);
+  str_winheight[2] = '\0';
 
   int x = 5;
   int y = 5;
