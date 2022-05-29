@@ -1,5 +1,6 @@
 
 #include <cstring>
+#include <stdlib.h>
 
 #include "BearLibTerminal.h"
 #include "entt.hpp"
@@ -19,6 +20,8 @@ int main() {
   char str_winheight[3];
   memcpy(str_winheight, &winsize[3], 2);
   str_winheight[2] = '\0';
+  const int WIN_WIDTH = atoi(str_winwidth);
+  const int WIN_HEIGHT = atoi(str_winheight);
 
   int x = 5;
   int y = 5;
@@ -37,7 +40,7 @@ int main() {
         --y;
       }
     } else if(k == TK_S) {
-      if(y < 49) {
+      if(y < WIN_HEIGHT - 1) {
         ++y;
       }
     } else if(k == TK_A) {
@@ -45,7 +48,7 @@ int main() {
         --x;
       }
     } else if(k == TK_D) {
-      if(x < 79) {
+      if(x < WIN_WIDTH - 1) {
         ++x;
       }
     }
