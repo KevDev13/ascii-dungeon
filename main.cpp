@@ -1,9 +1,8 @@
-
 #include <cstring>
 #include <stdlib.h>
 
 #include "BearLibTerminal.h"
-#include "entt.hpp"
+#include "thirdparty/entt.hpp"
 
 #include "vector.h"
 #include "layers.h"
